@@ -1,0 +1,146 @@
+.carousel__title {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--yellow);
+    text-align: center;
+    background-color: var(--white);
+    text-transform: uppercase;
+    padding: 1em 0 0.5em 0;
+}
+
+.swiper-slide > img {
+    width: 100%;
+}
+
+.swiper-pagination {
+    position: initial;
+    margin: 0.5em 0;
+}
+
+.swiper-button-prev, .swiper-button-next {
+    display: none;
+}
+
+.swiper-pagination-bullet {
+    background: var(--blue-gradient)
+}
+
+
+/*CARD*/
+
+.card {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: 1fr auto;
+    margin: 1em;
+    padding: 1em;
+    background-color: var(--white);
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    gap: 1em;
+}
+
+.card-description {
+    display: flex;
+    flex-direction: column;
+    grid-column: 1;
+    grid-row: 1;
+    row-gap: 0.5em;
+}
+
+.card-description__rating {
+    height: 15px;
+    width: fit-content;
+    display: inline-block;
+    margin-bottom: 0.5em;
+
+}
+
+.card-description__subtitle {
+    font-weight: 700;
+    color: var(--yellow);
+}
+
+.card-description__title {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--blue);
+}
+
+.card-description__text {
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.card-buttons {
+    grid-column: 1;
+    grid-row: 2;
+    display: flex;
+    align-items: center;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+}
+
+.buttons__item {
+    margin: 0 0.5em;
+}
+
+.card-buttons__link {
+    grid-column: 2;
+    grid-row: 2;
+    background-color: var(--yellow);
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 700;
+    padding: 1em 1.5em;
+    text-align: center;
+    transition: 200ms;
+}
+
+.card-buttons__link:hover {
+    background-color: var(--orange);
+}
+
+.card-image {
+    width: 100%;
+}
+
+@media screen and (min-width:1024px) {
+    .swiper-button-prev, .swiper-button-next {
+        display: block;
+        top: 55%;
+    }
+
+    .swiper {
+        width: 60%;
+    }
+
+    .swiper-pagination {
+        margin: 1em 0 2.5em 0;
+    }
+
+    .carousel__title {
+        font-size: 26px;
+    }
+    .card {
+        width: 50vw;
+        margin: 4em auto 2em auto;
+    }
+}
+
+@media screen and (min-width:1728px) {
+    .carousel__container {
+        display: flex;
+        align-items: center;
+        padding: 3em 10em;
+        gap: 6em;
+    }
+
+    .card-description__subtitle {
+        font-size: 32px;
+    }
+
+}
